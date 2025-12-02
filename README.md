@@ -2,7 +2,7 @@
 
 ### Proyecto Semestral de Mecatrónica - ME4250
 
-![Foto Principal del Robot](./Registros audiovisuales/foto_final_robot.jpg)
+![Foto Principal del Robot] <img src="./Registros audiovisuales/foto_final_robot.jpg" width="300"> 
 
 ## 📋 Resumen del Proyecto
 

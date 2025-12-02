@@ -89,12 +89,12 @@ Documentación esquemática del sistema.
 * **Esquemático Electrónico:** Conexiones entre Drivers, MCU, IMU y alimentación.
 * **Diagrama de Control:** Diagrama de bloques del lazo cerrado (Setpoint -> PID -> Planta -> Sensor).
 
-### 4. [`/Componentes y materiales`](./Lista de componentes)
+### 4. [`/Componentes y materiales`](./Lista_de_componentes)
 Lista de materiales (BOM) y hojas de datos.
 * `lista_materiales.pdf`: Resumen de costos y componentes.
 * Datasheets principales (MPU6050, Driver de Motor, Motores DC con Encoder).
 
-### 5. [`/Registros audiovisuales`](./Registros audiovisuales)
+### 5. [`/Registros audiovisuales`](./Registros_audiovisuales)
 Evidencia del funcionamiento.
 * Videos de pruebas de perturbación.
 * Gráficas de respuesta del ángulo vs tiempo.

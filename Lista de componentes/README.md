@@ -14,7 +14,7 @@ Este documento detalla el hardware, electrónica y piezas mecánicas utilizadas 
 
 | Componente | Imagen referencial | Descripción técnica | Documentación |
 | :--- | :---: | :--- | :---: |
-| **Motores DC con Reductora** | <img src="./Imágenes componentes/Motor-DC.png" width="100"> | Motor tipo TT (Amarillo) con caja reductora 1:48. Torque aprox: 0.8 kg·cm. Voltaje op: 3V-6V. | [Ver Datasheet](./Datasheets/TT Motor 148.pdf) |
+| **Motores DC con Reductora** | <img src="./Imágenes componentes/Motor-DC.png" width="100"> | Motor tipo TT (Amarillo) con caja reductora 1:48. Torque aprox: 0.8 kg·cm. Voltaje op: 3V-6V. | [Ver Datasheet](./Datasheets/TT_Motor_148.pdf) |
 | **Baterías Li-Ion 18650** | <img src="./Imágenes componentes/Li-ion-Batteries-18650.png" width="100"> | 2 celdas de 3.7V conectadas en serie (7.4V total). Alta capacidad de descarga para los motores. | - |
 | **Portapilas 18650** | <img src="./Imágenes componentes/Portapilas.png" width="100"> | Soporte para 2 baterías en serie con cables de salida. | - |
 | **Interruptor** | <img src="./Imágenes componentes/Interruptor.png" width="100"> | Switch ON/OFF tipo palanca para corte general de energía. | - |
@@ -31,7 +31,7 @@ Las piezas fueron diseñadas en CAD y fabricadas utilizando **PLA Genérico** (�
 
 | Pieza | Función | Archivo Fuente |
 | :--- | :--- | :---: |
-| **Cabeza Wall-E** | Estética y contrapeso superior para elevar el Centro de Masa. | [Ver STL](../CAD/Cabeza Wall-e.stl) |
-| **Chasis principal** | Base estructural que aloja las baterías y soporta el Arduino. | [Ver STL](../CAD/Carcasa.stl) |
+| **Cabeza Wall-E** | Apoyo a la estética seleccionada para el robot. | [Ver STL](../CAD/Cabeza Wall-e.stl) |
+| **Chasis principal** | Base estructural que aloja la mayoria de componentes electrónicos. | [Ver STL](../CAD/Carcasa.stl) |
 | **Ruedas** | Permiten el deslizamiento del carro por distintas superficies. | [Ver STL](../CAD/Ruedas.stl) |
 

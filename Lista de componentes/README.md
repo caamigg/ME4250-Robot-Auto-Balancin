@@ -31,7 +31,7 @@ Las piezas fueron diseñadas en CAD y fabricadas utilizando **PLA Genérico** (�
 
 | Pieza | Función | Archivo Fuente |
 | :--- | :--- | :---: |
-| **Cabeza Wall-E** | Apoyo a la estética seleccionada para el robot. | [Ver STL](../CAD/Cabeza Wall-e.stl) |
+| **Cabeza Wall-E** | Apoyo a la estética seleccionada para el robot. | [Ver STL](../CAD/Cabeza_Wall-e.stl) |
 | **Chasis principal** | Base estructural que aloja la mayoria de componentes electrónicos. | [Ver STL](../CAD/Carcasa.stl) |
 | **Ruedas** | Permiten el deslizamiento del carro por distintas superficies. | [Ver STL](../CAD/Ruedas.stl) |
 

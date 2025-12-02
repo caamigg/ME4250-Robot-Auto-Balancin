@@ -2,8 +2,7 @@
 
 ### Proyecto Semestral de Mecatrónica - ME4250
 
-![Foto Principal del Robot](./Registros_audiovisuales/foto_final_robot.jpg)
-*(Reemplaza esta ruta con la foto de portada de tu robot)*
+![Foto Principal del Robot](./Registros audiovisuales/foto_final_robot.jpg)
 
 ## 📋 Resumen del Proyecto
 
@@ -44,7 +43,7 @@ Nuestro diseño pasó por una etapa crítica de iteración para asegurar la esta
 
 | Concepto Inicial | Diseño Final Implementado |
 |:---:|:---:|
-| <img src="./Registros_audiovisuales/Estetica_inicial.jpg" width="300"> | <img src="./Registros_audiovisuales/diseño_walle.jpg" width="300"> |
+| <img src="./Registros audiovisuales/Estetica inicial.jpg" width="300"> | <img src="./Registros_audiovisuales/diseño_walle.jpg" width="300"> |
 | *Problemas de sujeción mecánica* | *Estructura rígida y optimizada* |
 
 ---

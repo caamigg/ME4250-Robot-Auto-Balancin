@@ -105,10 +105,10 @@ Evidencia del funcionamiento.
 ## 🛠️ Arquitectura del Sistema
 
 ### Hardware
-* **Microcontrolador:** (Ej. Arduino Nano / ESP32)
+* **Microcontrolador:** Arduino
 * **Sensores:** IMU MPU6050 (Acelerómetro + Giroscopio)
-* **Actuadores:** Motores DC con caja reductora y Encoders.
-* **Potencia:** Driver (Ej. L298N / TB6612FNG) y Baterías Li-Ion.
+* **Actuadores:** Motores DC con caja reductora.
+* **Potencia:** Driver L298N y Baterías Li-Ion.
 
 ### Estrategia de Control
 Se implementó un controlador **PID** sintonizado experimentalmente.

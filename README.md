@@ -1,15 +1,17 @@
-# ME4250-Robot-Auto-Balancin
 # WALL-E Balancer: Robot Auto-Balancín
 
-### Proyecto Semestral de Mecatrónica
+### Proyecto Semestral de Mecatrónica - ME4250
 
-Adjuntar foto
+![Foto Principal del Robot](./Registros_audiovisuales/foto_final_robot.jpg)
+*(Reemplaza esta ruta con la foto de portada de tu robot)*
 
-## Resumen del Proyecto
+## 📋 Resumen del Proyecto
 
-Este repositorio contiene la documentación técnica, diseño mecánico y firmware del "Wall-E Balancer", un robot de dos ruedas coaxiales capaz de mantener el equilibrio vertical mediante un sistema de control de lazo cerrado.
+Este repositorio contiene la documentación técnica, diseño mecánico y firmware del **"Wall-E Balancer"**, un robot de dos ruedas coaxiales capaz de mantener el equilibrio vertical mediante un sistema de control de lazo cerrado.
 
-El proyecto fue desarrollado como parte del curso ME4250 Mecatrónica en el Departamento de Ingeniería Mecánica de la Universidad de Chile, durante el semestre Primavera 2025. El objetivo principal fue integrar diseño mecánico, electrónica y teoría de control para estabilizar un péndulo invertido sobre ruedas.
+El proyecto fue desarrollado como parte del curso **ME4250 Mecatrónica** en el Departamento de Ingeniería Mecánica de la **Universidad de Chile**, durante el semestre Primavera 2025. El objetivo principal fue integrar diseño mecánico, electrónica y teoría de control para estabilizar un péndulo invertido sobre ruedas.
+
+---
 
 ## 👥 Equipo de Trabajo
 
@@ -28,22 +30,42 @@ El proyecto fue desarrollado como parte del curso ME4250 Mecatrónica en el Depa
 * *Profesor:* Harold Valenzuela
 * *Auxiliares:* Francisco Cáceres, Fernando Navarrete
 
-## Evolución del Diseño e Iteración
+---
+
+## ⚙️ Evolución del Diseño e Iteración
 
 Nuestro diseño pasó por una etapa crítica de iteración para asegurar la estabilidad mecánica:
 
-1.  **Concepto Inicial (Mono-Ciclista):** Originalmente se planteó un diseño basado en un personaje sobre un monociclo. Sin embargo, las pruebas preliminares mostraron problemas de sujeción del la estética superior durante el movimiento del carro.
+1.  **Concepto Inicial (Mono-Ciclista):** Originalmente se planteó un diseño basado en un personaje sobre un monociclo. Sin embargo, las pruebas preliminares mostraron problemas de sujeción de la estética superior durante el movimiento del carro.
 2.  **Diseño Final (Estética Wall-E):** Se pivotó hacia una estructura rígida inspirada en "Wall-E". Esta modificación permitió:
-    * Fijar firmemente los componentes superiores .
-    * Elevar el CoM de manera controlada para mejorar la inercia rotacional según los requerimientos.
+    * Fijar firmemente los componentes superiores.
+    * Elevar el Centro de Masa (CoM) de manera controlada para mejorar la inercia rotacional según los requerimientos.
     * Alojar la electrónica de forma más ordenada y segura.
 
 | Concepto Inicial | Diseño Final Implementado |
 |:---:|:---:|
-| <img src="./Registros audiovisuales/Estetica inicial.jpg" width="300"> | <img src="./Registros_audiovisuales/diseño_walle.jpg" width="300"> |
+| <img src="./Registros_audiovisuales/Estetica_inicial.jpg" width="300"> | <img src="./Registros_audiovisuales/diseño_walle.jpg" width="300"> |
 | *Problemas de sujeción mecánica* | *Estructura rígida y optimizada* |
 
-## Estructura del Repositorio
+---
+
+## ⚖️ Decisiones de Diseño y Selección de Componentes
+
+Para cumplir con los requerimientos físicos del sistema, se realizaron las siguientes selecciones técnicas:
+
+### 1. Selección de Motores (Torque y Peso)
+Se seleccionaron **2 motores DC con caja reductora** (tipo estándar "amarillo" TT).
+* **Análisis:** Se calculó el peso total del carro y el torque necesario para recuperar la verticalidad.
+* **Justificación:** La relación de reducción de estos motores entrega el torque suficiente para mover la masa del robot con la agilidad requerida, descartando la necesidad de motores de mayor costo para esta escala de peso.
+
+### 2. Sensorización (MPU6050)
+Para el sistema de autobalance se optó por una IMU **MPU6050** (6 Grados de Libertad).
+* **Datos obtenidos:** Aceleración lineal y Velocidad angular.
+* **Justificación:** Se requiere fusión de sensores. El acelerómetro entrega la posición (inclinación) pero es ruidoso ante vibraciones; el giroscopio entrega la velocidad angular pero sufre de deriva (drift). Al combinar ambos datos obtenemos las variables de estado necesarias (Posición y Velocidad) para el controlador PID.
+
+---
+
+## 📂 Estructura del Repositorio
 
 A continuación se describe el contenido de las carpetas de este proyecto:
 
@@ -56,7 +78,7 @@ Contiene los archivos fuente para la fabricación del robot.
 ### 2. [`/Codigo`](./Codigo)
 Firmware final cargado en el microcontrolador (Arduino/ESP32).
 * **`main.ino`:** Archivo principal.
-* **Librerías:** Se incluye referencia a la librería `MPU6050_tockn` (o la que hayan usado) y control de motores.
+* **Librerías:** Se incluye referencia a la librería `MPU6050_tockn` (o la utilizada) y control de motores.
 * *El código implementa un filtro complementario para la lectura del ángulo y un controlador PID discreto.*
 
 ### 3. [`/Diagramas`](./Diagramas)
@@ -75,7 +97,9 @@ Evidencia del funcionamiento.
 * Gráficas de respuesta del ángulo vs tiempo.
 * Bitácora fotográfica del montaje.
 
-## Arquitectura del Sistema
+---
+
+## 🛠️ Arquitectura del Sistema
 
 ### Hardware
 * **Microcontrolador:** (Ej. Arduino Nano / ESP32)
@@ -84,21 +108,25 @@ Evidencia del funcionamiento.
 * **Potencia:** Driver (Ej. L298N / TB6612FNG) y Baterías Li-Ion.
 
 ### Estrategia de Control
-Se implementó un controlador PID sintonizado experimentalmente.
+Se implementó un controlador **PID** sintonizado experimentalmente.
 * **Setpoint:** 0° (Vertical).
 * **Input:** Ángulo de inclinación filtrado (fusión de sensores).
 * **Output:** PWM a los motores.
 
-## Instrucciones de Ejecución
+---
+
+## 🚀 Instrucciones de Ejecución
 
 1.  **Montaje:** Asegurar que la batería esté cargada y los cables de los motores firmemente conectados.
 2.  **Calibración:** Al encender, mantener el robot estático verticalmente durante 5 segundos para la calibración del giroscopio.
 3.  **Operación:** El robot intentará mantener el equilibrio automáticamente.
     * *Precaución: No operar en superficies resbaladizas.*
 
-## Referencias
+---
 
-* **MPU6050 Datasheet:** 
+## 📚 Referencias
+
+* **MPU6050 Datasheet:** (Enlace al Datasheet)
 * **Librería MPU6050:** (Enlace al repo de la librería usada)
 * **Documentación del Curso:** Requerimientos de Diseño ME4250 (Adjunto en repositorio).
 

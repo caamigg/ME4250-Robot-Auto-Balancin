@@ -2,7 +2,11 @@
 
 ### Proyecto Semestral de Mecatrónica - ME4250
 
-![Foto Principal del Robot] <img src="./Registros audiovisuales/foto_final_robot.jpg" width="300"> 
+<p align="center">
+  <img src="./Registros_audiovisuales/foto_final_robot.jpg" width="300">
+  
+  <em>Figura 1: Prototipo final "Wall-E"</em>
+</p>
 
 ## 📋 Resumen del Proyecto
 

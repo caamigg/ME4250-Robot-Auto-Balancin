@@ -8,7 +8,7 @@
   <em>Figura 1: Prototipo final "Wall-E"</em>
 </p>
 
-## 📋 Resumen del proyecto
+## Resumen del proyecto
 
 Este repositorio contiene la documentación técnica, diseño mecánico y firmware del **"Wall-E Balancer"**, un robot de dos ruedas coaxiales capaz de mantener el equilibrio vertical mediante un sistema de control de lazo cerrado.
 

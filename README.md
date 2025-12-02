@@ -32,10 +32,10 @@ El proyecto fue desarrollado como parte del curso ME4250 Mecatrónica en el Depa
 
 Nuestro diseño pasó por una etapa crítica de iteración para asegurar la estabilidad mecánica:
 
-1.  **Concepto Inicial (Mono-Ciclista):** Originalmente se planteó un diseño basado en un personaje sobre un monociclo. Sin embargo, las pruebas preliminares mostraron que la sujeción del elemento superior (el peluche) introducía vibraciones no modeladas y dificultaba la ubicación precisa del Centro de Masa (CoM).
+1.  **Concepto Inicial (Mono-Ciclista):** Originalmente se planteó un diseño basado en un personaje sobre un monociclo. Sin embargo, las pruebas preliminares mostraron problemas de sujeción del la estética superior durante el movimiento del carro.
 2.  **Diseño Final (Estética Wall-E):** Se pivotó hacia una estructura rígida inspirada en "Wall-E". Esta modificación permitió:
-    * Fijar firmemente los componentes superiores (cabeza/baterías).
-    * Elevar el CoM de manera controlada para mejorar la inercia rotacional según los requerimientos ($H \approx A$).
+    * Fijar firmemente los componentes superiores .
+    * Elevar el CoM de manera controlada para mejorar la inercia rotacional según los requerimientos.
     * Alojar la electrónica de forma más ordenada y segura.
 
 | Concepto Inicial | Diseño Final Implementado |

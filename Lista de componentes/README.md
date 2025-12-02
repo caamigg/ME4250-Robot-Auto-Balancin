@@ -27,7 +27,7 @@ Este documento detalla el hardware, electrónica y piezas mecánicas utilizadas 
 
 ## 4. Piezas fabricadas (Impresión 3D)
 
-Las piezas fueron diseñadas en CAD y fabricadas utilizando **PLA Genérico** (Ácido Poliláctico) con una densidad de relleno del 20%.
+Las piezas fueron diseñadas en CAD y fabricadas utilizando **PLA Genérico** (Ácido Poliláctico) con una densidad de relleno del 10%.
 
 | Pieza | Función | Archivo Fuente |
 | :--- | :--- | :---: |

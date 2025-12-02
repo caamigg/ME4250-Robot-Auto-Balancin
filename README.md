@@ -1,2 +1,106 @@
 # ME4250-Robot-Auto-Balancin
-Proyecto de Mecatrónica ME4250: Robot Auto-Balancín (EVA-E) con carcasa WALL-E. Se implementa control PID basado en IMU para estabilidad dinámica. Diseño optimizado con A = H$ y bajo para mejorar la respuesta inercial. Repositorio con CAD, código y diagramas.
+# WALL-E Balancer: Robot Auto-Balancín
+
+### Proyecto Semestral de Mecatrónica
+
+Adjuntar foto
+
+## Resumen del Proyecto
+
+Este repositorio contiene la documentación técnica, diseño mecánico y firmware del "Wall-E Balancer", un robot de dos ruedas coaxiales capaz de mantener el equilibrio vertical mediante un sistema de control de lazo cerrado.
+
+El proyecto fue desarrollado como parte del curso ME4250 Mecatrónica en el Departamento de Ingeniería Mecánica de la Universidad de Chile, durante el semestre Primavera 2025. El objetivo principal fue integrar diseño mecánico, electrónica y teoría de control para estabilizar un péndulo invertido sobre ruedas.
+
+## 👥 Equipo de Trabajo
+
+**Curso:** ME4250 Mecatrónica  
+**Institución:** Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile  
+**Semestre:** Primavera 2025  
+
+**Integrantes:**
+* **Camila Aravena**
+* **Carlos Aravena**
+* **Jan Fergusson**
+* **Marcelo Guaquel**
+* **Antonella Savoy**
+
+**Cuerpo Docente:**
+* *Profesor:* Harold Valenzuela
+* *Auxiliares:* Francisco Cáceres, Fernando Navarrete
+
+## Evolución del Diseño e Iteración
+
+Nuestro diseño pasó por una etapa crítica de iteración para asegurar la estabilidad mecánica:
+
+1.  **Concepto Inicial (Mono-Ciclista):** Originalmente se planteó un diseño basado en un personaje sobre un monociclo. Sin embargo, las pruebas preliminares mostraron que la sujeción del elemento superior (el peluche) introducía vibraciones no modeladas y dificultaba la ubicación precisa del Centro de Masa (CoM).
+2.  **Diseño Final (Estética Wall-E):** Se pivotó hacia una estructura rígida inspirada en "Wall-E". Esta modificación permitió:
+    * Fijar firmemente los componentes superiores (cabeza/baterías).
+    * Elevar el CoM de manera controlada para mejorar la inercia rotacional según los requerimientos ($H \approx A$).
+    * Alojar la electrónica de forma más ordenada y segura.
+
+| Concepto Inicial | Diseño Final Implementado |
+|:---:|:---:|
+| <img src="./Registros_audiovisuales/concepto_mono.jpg" width="300"> | <img src="./Registros_audiovisuales/diseño_walle.jpg" width="300"> |
+| *Problemas de sujeción mecánica* | *Estructura rígida y optimizada* |
+
+## Estructura del Repositorio
+
+A continuación se describe el contenido de las carpetas de este proyecto:
+
+### 1. [`/CAD`](./CAD)
+Contiene los archivos fuente para la fabricación del robot.
+* **Archivos STL:** Listos para impresión 3D (Cabeza, Soportes de motor, Chasis base).
+* **Ensamblaje:** Archivo de visualización del robot completo.
+* *Nota: Se priorizó la robustez de la sujeción de los motores para evitar juegos mecánicos que afecten al PID.*
+
+### 2. [`/Codigo`](./Codigo)
+Firmware final cargado en el microcontrolador (Arduino/ESP32).
+* **`main.ino`:** Archivo principal.
+* **Librerías:** Se incluye referencia a la librería `MPU6050_tockn` (o la que hayan usado) y control de motores.
+* *El código implementa un filtro complementario para la lectura del ángulo y un controlador PID discreto.*
+
+### 3. [`/Diagramas`](./Diagramas)
+Documentación esquemática del sistema.
+* **Esquemático Electrónico:** Conexiones entre Drivers, MCU, IMU y alimentación.
+* **Diagrama de Control:** Diagrama de bloques del lazo cerrado (Setpoint -> PID -> Planta -> Sensor).
+
+### 4. [`/Componentes_y_materiales`](./Componentes_y_materiales)
+Lista de materiales (BOM) y hojas de datos.
+* `lista_materiales.pdf`: Resumen de costos y componentes.
+* Datasheets principales (MPU6050, Driver de Motor, Motores DC con Encoder).
+
+### 5. [`/Registros_audiovisuales`](./Registros_audiovisuales)
+Evidencia del funcionamiento.
+* Videos de pruebas de perturbación.
+* Gráficas de respuesta del ángulo vs tiempo.
+* Bitácora fotográfica del montaje.
+
+## Arquitectura del Sistema
+
+### Hardware
+* **Microcontrolador:** (Ej. Arduino Nano / ESP32)
+* **Sensores:** IMU MPU6050 (Acelerómetro + Giroscopio)
+* **Actuadores:** Motores DC con caja reductora y Encoders.
+* **Potencia:** Driver (Ej. L298N / TB6612FNG) y Baterías Li-Ion.
+
+### Estrategia de Control
+Se implementó un controlador PID sintonizado experimentalmente.
+* **Setpoint:** 0° (Vertical).
+* **Input:** Ángulo de inclinación filtrado (fusión de sensores).
+* **Output:** PWM a los motores.
+
+## Instrucciones de Ejecución
+
+1.  **Montaje:** Asegurar que la batería esté cargada y los cables de los motores firmemente conectados.
+2.  **Calibración:** Al encender, mantener el robot estático verticalmente durante 5 segundos para la calibración del giroscopio.
+3.  **Operación:** El robot intentará mantener el equilibrio automáticamente.
+    * *Precaución: No operar en superficies resbaladizas.*
+
+## Referencias
+
+* **MPU6050 Datasheet:** 
+* **Librería MPU6050:** (Enlace al repo de la librería usada)
+* **Documentación del Curso:** Requerimientos de Diseño ME4250 (Adjunto en repositorio).
+
+---
+*Este proyecto fue realizado con fines académicos para el Departamento de Ingeniería Mecánica de la Universidad de Chile.*

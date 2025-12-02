@@ -14,7 +14,7 @@ Este documento detalla el hardware, electrónica y piezas mecánicas utilizadas 
 
 | Componente | Imagen referencial | Descripción técnica | Documentación |
 | :--- | :---: | :--- | :---: |
-| **Motores DC con Reductora** | <img src="./Imágenes componentes/Motor-DC.png" width="100"> | Motor tipo TT (Amarillo) con caja reductora 1:48. Torque aprox: 0.8 kg·cm. Voltaje op: 3V-6V. | [Ver Specs](./Datasheets/TT Motor 148.pdf) |
+| **Motores DC con Reductora** | <img src="./Imágenes componentes/Motor-DC.png" width="100"> | Motor tipo TT (Amarillo) con caja reductora 1:48. Torque aprox: 0.8 kg·cm. Voltaje op: 3V-6V. | [Ver Datasheet](./Datasheets/TT Motor 148.pdf) |
 | **Baterías Li-Ion 18650** | <img src="./Imágenes componentes/Li-ion-Batteries-18650.png" width="100"> | 2 celdas de 3.7V conectadas en serie (7.4V total). Alta capacidad de descarga para los motores. | - |
 | **Portapilas 18650** | <img src="./Imágenes componentes/Portapilas.png" width="100"> | Soporte para 2 baterías en serie con cables de salida. | - |
 | **Interruptor** | <img src="./Imágenes componentes/Interruptor.png" width="100"> | Switch ON/OFF tipo palanca para corte general de energía. | - |

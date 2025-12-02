@@ -40,7 +40,7 @@ Nuestro diseño pasó por una etapa crítica de iteración para asegurar la esta
 
 | Concepto Inicial | Diseño Final Implementado |
 |:---:|:---:|
-| <img src="./Registros_audiovisuales/Estetica inicial.jpg" width="300"> | <img src="./Registros_audiovisuales/diseño_walle.jpg" width="300"> |
+| <img src="./Registros audiovisuales/Estetica inicial.jpg" width="300"> | <img src="./Registros_audiovisuales/diseño_walle.jpg" width="300"> |
 | *Problemas de sujeción mecánica* | *Estructura rígida y optimizada* |
 
 ## Estructura del Repositorio

@@ -1,6 +1,6 @@
 # WALL-E Balancer: Robot Auto-Balancín
 
-### Proyecto Semestral de Mecatrónica - ME4250
+### Proyecto semestral de Mecatrónica - ME4250
 
 <p align="center">
   <img src="./Registros audiovisuales/foto_final_robot.jpg" width="300">
@@ -8,7 +8,7 @@
   <em>Figura 1: Prototipo final "Wall-E"</em>
 </p>
 
-## 📋 Resumen del Proyecto
+## 📋 Resumen del proyecto
 
 Este repositorio contiene la documentación técnica, diseño mecánico y firmware del **"Wall-E Balancer"**, un robot de dos ruedas coaxiales capaz de mantener el equilibrio vertical mediante un sistema de control de lazo cerrado.
 
@@ -16,7 +16,7 @@ El proyecto fue desarrollado como parte del curso **ME4250 Mecatrónica** en el 
 
 ---
 
-## 👥 Equipo de Trabajo
+## Equipo de trabajo
 
 **Curso:** ME4250 Mecatrónica  
 **Institución:** Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile  
@@ -29,34 +29,34 @@ El proyecto fue desarrollado como parte del curso **ME4250 Mecatrónica** en el 
 * **Marcelo Guaquel**
 * **Antonella Savoy**
 
-**Cuerpo Docente:**
+**Cuerpo docente:**
 * *Profesor:* Harold Valenzuela
 * *Auxiliares:* Francisco Cáceres, Fernando Navarrete
 
 ---
 
-## ⚙️ Evolución del Diseño e Iteración
+## Evolución del diseño e iteración
 
 Nuestro diseño pasó por una etapa crítica de iteración para asegurar la estabilidad mecánica:
 
-1.  **Concepto Inicial (Mono-Ciclista):** Originalmente se planteó un diseño basado en un personaje sobre un monociclo. Sin embargo, las pruebas preliminares mostraron problemas de sujeción de la estética superior durante el movimiento del carro.
-2.  **Diseño Final (Estética Wall-E):** Se pivotó hacia una estructura rígida inspirada en "Wall-E". Esta modificación permitió:
+1.  **Concepto inicial (Mono-Ciclista):** Originalmente se planteó un diseño basado en un personaje sobre un monociclo. Sin embargo, las pruebas preliminares mostraron problemas de sujeción de la estética superior durante el movimiento del carro.
+2.  **Diseño final (Estética Wall-E):** Se pivotó hacia una estructura rígida inspirada en "Wall-E". Esta modificación permitió:
     * Fijar firmemente los componentes superiores.
     * Elevar el Centro de Masa (CoM) de manera controlada para mejorar la inercia rotacional según los requerimientos.
     * Alojar la electrónica de forma más ordenada y segura.
 
-| Concepto Inicial | Diseño Final Implementado |
+| Concepto inicial | Diseño final implementado |
 |:---:|:---:|
 | <img src="./Registros audiovisuales/Estetica inicial.jpg" width="300"> | <img src="./Registros_audiovisuales/diseño_walle.jpg" width="300"> |
 | *Problemas de sujeción mecánica* | *Estructura rígida y optimizada* |
 
 ---
 
-## ⚖️ Decisiones de Diseño y Selección de Componentes
+## Decisiones de diseño y selección de componentes
 
 Para cumplir con los requerimientos físicos del sistema, se realizaron las siguientes selecciones técnicas:
 
-### 1. Selección de Motores (Torque y Peso)
+### 1. Selección de motores (torque y peso)
 Se seleccionaron **2 motores DC con caja reductora** (tipo estándar "amarillo" TT).
 * **Análisis:** Se calculó el peso total del carro y el torque necesario para recuperar la verticalidad.
 * **Justificación:** La relación de reducción de estos motores entrega el torque suficiente para mover la masa del robot con la agilidad requerida, descartando la necesidad de motores de mayor costo para esta escala de peso.
@@ -68,7 +68,7 @@ Para el sistema de autobalance se optó por una IMU **MPU6050** (6 Grados de Lib
 
 ---
 
-## 📂 Estructura del Repositorio
+## Estructura del repositorio
 
 A continuación se describe el contenido de las carpetas de este proyecto:
 
@@ -102,7 +102,7 @@ Evidencia del funcionamiento.
 
 ---
 
-## 🛠️ Arquitectura del Sistema
+## Arquitectura del sistema
 
 ### Hardware
 * **Microcontrolador:** Arduino
@@ -118,7 +118,7 @@ Se implementó un controlador **PID** sintonizado experimentalmente.
 
 ---
 
-## 🚀 Instrucciones de Ejecución
+## Instrucciones de ejecución
 
 1.  **Montaje:** Asegurar que la batería esté cargada y los cables de los motores firmemente conectados.
 2.  **Calibración:** Al encender, mantener el robot estático verticalmente durante 5 segundos para la calibración del giroscopio.
@@ -127,7 +127,7 @@ Se implementó un controlador **PID** sintonizado experimentalmente.
 
 ---
 
-## 📚 Referencias
+## Referencias
 
 * **MPU6050 Datasheet:** (Enlace al Datasheet)
 * **Librería MPU6050:** (Enlace al repo de la librería usada)

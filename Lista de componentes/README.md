@@ -6,7 +6,7 @@ Este documento detalla el hardware, electrónica y piezas mecánicas utilizadas 
 
 | Componente | Imagen Referencial | Descripción Técnica | Documentación |
 | :--- | :---: | :--- | :---: |
-| **Arduino Uno R3** | <img src="./Lista de componentes/Imágenes componentes/MCI00756A.png" width="100"> | Microcontrolador basado en ATmega328P. Cerebro del sistema encargado de leer el sensor y ejecutar el PID. | [Ver Datasheet](./Datasheets/Arduino_Uno_Schematic.pdf) |
+| **Arduino Uno R3** | <img src="./Imágenes componentes/MCI00756A.png" width="100"> | Microcontrolador basado en ATmega328P. Cerebro del sistema encargado de leer el sensor y ejecutar el PID. | [Ver Datasheet](./Datasheets/Arduino_Uno_Schematic.pdf) |
 | **Driver L298N** | <img src="./Lista de componentes/Imágenes componentes/L298N_driver.png" width="100"> | Puente H Dual. Permite controlar el sentido y velocidad (PWM) de los dos motores DC utilizando una fuente de voltaje externa. | [Ver Datasheet](./Datasheets/L298N_datasheet.pdf) |
 | **IMU MPU6050** | <img src="./Lista de componentes/Imágenes componentes/MPU6050.jpg" width="100"> | Sensor de 6 Grados de Libertad (6-DOF). Combina un acelerómetro de 3 ejes y un giroscopio de 3 ejes con procesador de movimiento digital (DMP). | [Ver Datasheet](./Datasheets/MPU6050_Datasheet.pdf) |
 

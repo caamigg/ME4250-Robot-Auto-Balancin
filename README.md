@@ -1,4 +1,4 @@
-# WALL-E Balancer: Robot Auto-Balancín
+# WALL-E: Robot Auto-Balancín
 
 ### Proyecto semestral de Mecatrónica - ME4250
 
@@ -10,7 +10,7 @@
 
 ## Resumen del proyecto
 
-Este repositorio contiene la documentación técnica, diseño mecánico y firmware del **"Wall-E Balancer"**, un robot de dos ruedas coaxiales capaz de mantener el equilibrio vertical mediante un sistema de control de lazo cerrado.
+Este repositorio contiene la documentación técnica, diseño mecánico y firmware del **"Wall-E Auto-Balancín"**, un robot de dos ruedas coaxiales capaz de mantener el equilibrio vertical mediante un sistema de control de lazo cerrado.
 
 El proyecto fue desarrollado como parte del curso **ME4250 Mecatrónica** en el Departamento de Ingeniería Mecánica de la **Universidad de Chile**, durante el semestre Primavera 2025. El objetivo principal fue integrar diseño mecánico, electrónica y teoría de control para estabilizar un péndulo invertido sobre ruedas.
 

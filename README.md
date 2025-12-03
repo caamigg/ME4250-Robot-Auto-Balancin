@@ -129,9 +129,9 @@ Se implementó un controlador **PID** sintonizado experimentalmente.
 
 ## Referencias
 
-* **MPU6050 Datasheet:** (Enlace al Datasheet)
-* **Librería MPU6050:** (Enlace al repo de la librería usada)
-* **Documentación del Curso:** Requerimientos de Diseño ME4250 (Adjunto en repositorio).
+* **MPU6050 Datasheet**
+* **Librería MPU6050**
+* **Documentación del Curso:** Requerimientos de Diseño ME4250.
 
 ---
 *Este proyecto fue realizado con fines académicos para el Departamento de Ingeniería Mecánica de la Universidad de Chile.*

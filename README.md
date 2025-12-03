@@ -47,8 +47,8 @@ Nuestro diseño pasó por una etapa crítica de iteración para asegurar la esta
 
 | Concepto inicial | Diseño final implementado |
 |:---:|:---:|
-| <img src="./Registros audiovisuales/Estetica inicial.jpg" width="300"> | <img src="./Registros_audiovisuales/diseño_walle.jpg" width="300"> |
-| *Problemas de sujeción mecánica* | *Estructura rígida y optimizada* |
+| <img src="./Registros audiovisuales/Estetica inicial.jpg" width="300"> | <img src="./Registros audiovisuales/ensamble_CAD_final.png" width="300"> |
+| *Problemas de sujeción mecánica* | *Estructura final optimizada* |
 
 ---
 
